@@ -6,15 +6,12 @@ import Colors from '../../utils/colors';
 import { GameTurnContext } from '../../utils/context/game-turn';
 import checkWin from '../../utils/game-function/check-win';
 import WinPopup from '../shared/win-popup';
-import { GameModContext } from '../../utils/context/game-mod';
 
 export default function Game() {
     const { map, changeTile, resetMap } = useContext(GameMapContext);
     const { gameTurn, resetTurn } = useContext(GameTurnContext);
-    const { setGameMod } = useContext(GameModContext);
     const [crossWinned, setCrossWinned] = useState<number>(0);
     const [circleWinned, setCircleWinned] = useState<number>(0);
-    const [ties, setTies] = useState<number>(0);
     const [winner, setWinner] = useState<'' | 'cross' | 'circle'>('');
 
     return (

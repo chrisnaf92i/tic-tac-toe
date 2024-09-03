@@ -1,4 +1,3 @@
-import React from 'react';
 import Popup, { PopupTitle } from '../layout/popup';
 import Button from './button';
 import Colors from '../../utils/colors';

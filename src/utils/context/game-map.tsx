@@ -11,7 +11,9 @@ export const GameMapContext = createContext<{
         ['', '', ''],
         ['', '', ''],
     ],
-    changeTile: (l: number, c: number) => {},
+    changeTile: (l: number, c: number) => {
+        console.log(l, c);
+    },
     resetMap: () => {},
 });
 

@@ -1,6 +1,4 @@
 import Popup, { PopupTitle } from '../layout/popup';
-import styled from 'styled-components';
-import Colors from '../../utils/colors';
 import Button from './button';
 import { useContext } from 'react';
 import { GameMapContext } from '../../utils/context/game-map';
