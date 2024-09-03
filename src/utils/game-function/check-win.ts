@@ -40,7 +40,7 @@ const checkWin = (
         // vérification si on pose un symbole en bas à gauche
         if (map[l][c - 1] == gameTurn && map[l][c + 1] === gameTurn) {
             setWinner(gameTurn);
-        } else if (map[l - 1][c] && map[l - 2][c]) {
+        } else if (map[l - 1][c] === gameTurn && map[l - 2][c] === gameTurn) {
             setWinner(gameTurn);
         }
     } else if (l == 2 && c == 2) {
@@ -48,7 +48,7 @@ const checkWin = (
             setWinner(gameTurn);
         } else if (map[l][c - 1] === gameTurn && map[l][c - 2] === gameTurn) {
             setWinner(gameTurn);
-        } else if (map[l - 1][c - 1] === gameTurn && map[l - 2][c - 2]) {
+        } else if (map[l - 1][c - 1] === gameTurn && map[l - 2][c - 2] === gameTurn) {
             setWinner(gameTurn);
         }
     } else if (l == 1 && c == 2) {
