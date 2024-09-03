@@ -11,9 +11,10 @@ export default function Header() {
     const [resetPopupIsOpen, setResetPopupIsOpen] = useState<boolean>(false);
     return (
         <StyledHeader>
-            <Image
+            <img
                 src="images/logo.svg"
                 alt="Logo tic tac toe"
+                style={{ width: '64px' }}
             />
             {gameMod == 'Game' && (
                 <>
